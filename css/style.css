@@ -111,7 +111,7 @@ font-weight: 400;
 }
 
 #about {
-    margin-top: 4rem;
+    margin: 6rem 0rem;
     width: 60%;
     height: 80vh;
      padding: 0rem 2rem 6rem 2rem;
@@ -119,6 +119,8 @@ font-weight: 400;
      justify-content: center;
      align-items: center;
      gap: 3rem;
+    border-bottom: #fff solid 0.15rem;
+
 }
 
 .about-content {
@@ -151,6 +153,7 @@ font-weight: 400;
     width: 6rem;
     font-weight: 500;
 }
+
 #aboutBtn li button:hover{
     color: #e0e645;
     border: solid 0.1rem #e0e645;
@@ -394,3 +397,9 @@ font-weight: 400;
     background-color: #013220;
 }
 
+.life{
+    display: none;
+}
+.education{
+    display: none;
+}
