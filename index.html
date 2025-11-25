@@ -9,159 +9,200 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <meta name="google-site-verification" content="7ISRyxR92v8Lz-2qqebLrBq5IFZ4_-tAHbV51YY5CQI" />
+
+  <!--link for swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
 
-  <!-- =======================
-       1. Header / Navbar
-  ======================== -->
+  <!-- Header / Navbar -->
   <header>
     <nav>
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#hero">Home</a>
+          <div class="nav-overflow"></div>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#achievements">Achievements</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!-- =======================
-       2. Hero Section
-  ======================== -->
+  <!-- Hero Section -->
+  
   <section id="hero">
-    <!-- Add your photo, name, title, and call-to-action buttons here -->
-     <img src="assets/images/myimg1.jpg" alt="my image">
-     <div class="hero-content">
-        <!--Name-->
-        <h1>Hi,I'm Eyob Seta</h1>
-        <!--Title-->
-        <h2>Software Engineer</h2>
-        <!--description-->
-        <p>I am a 3rd-year Software Engineering student at Mekelle     University with a strong interest in full-stack web development. Skilled in JavaScript, Node.js, HTML, and CSS. Passionate about building efficient, user-friendly applications and improving     problem-solving skills through data
-              structures and algorithms.</p>
-               <!-- Call-to-Action Buttons -->
-      <div class="hero-buttons">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eyobseta50@gmail.com&su=Hiring%20Inquiry%20from%20Portfolio" target="_blank" class="btn">Hire Me</a>
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="https://drive.google.com/file/d/1aQ8dENLXuZROWDzNt8gkqNVMgHnZzdaE/view?usp=drive_link" class="btn resume" 
-   target="_blank" rel="noopener noreferrer">Resume</a>
-
-
-        </div>       
-
-     </div>
+        <div class="hero-content">
+                  <h1>Hi, I'm Eyob | Creative Full-Stack    Developer</h1>
+                  <a href=""></a>
+                  <p>I help businesses and clients turn ideas into fully functional web applications. <br> Skilled in JavaScript, Node.js, HTML, and CSS, I create efficient, user-friendly <br> solutions that solve real problems and deliver results.</p>
+                      
+                <div class="hero-buttons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eyobseta50@gmail.com&su=Hiring%20Inquiry%20from%20Portfolio" target="_blank" class="btn">Let’s Build Your Project</a>
+                        <a href="#projects" class="btn">See My Work</a>
+                        <a href="https://drive.google.com/file/d/1aQ8dENLXuZROWDzNt8gkqNVMgHnZzdaE/view?usp=drive_link" class="btn resume" 
+                    target="_blank" rel="noopener noreferrer">Resume</a>
+                </div> 
+                <div class="to-form">
+                      <h3>If you are ready now click below link to start your project</h3>
+                      <a href="https://eyobseta.github.io/job-form/
+" class="form-btn">Start Now</a>
+                  </div>      
+        </div>
+        <div class="hero-img">
+                <img src="assets/images/myimg1.jpg" alt="my image">
+        </div>
   </section>
-   </hr>  
+
+
+    <!-- About Section-->
    <section id="about">
-  <!-- =======================
-       3. About Section
-  ======================== -->
-   <div class="about-content">
-     <h1>About Me</h1>
-     <ul id="aboutBtn">
-        <li><button id="expBtn">Experiance</button></li>
-        <li><button id="eduBtn">Education</button></li>
-        <li><button id="lifeBtn">Life</button></li>
-     </ul>
-     <div class="experience">
-  <p>
-    I'm <strong>Eyob</strong>, a passionate <strong>Full-Stack Developer</strong>.  <br>
-    Over my university journey, I’ve built several solid projects that strengthened my backend and frontend skills.  <br><br>
-    I’m currently working on <strong>“My-Back-Test”</strong> — a Node.js-based backend project designed to test and enhance my backend development abilities.
-  </p><br><br>
-  <p>Some highlights of my experience include:</p><br>
-  <ol>
-    <li>Developing responsive frontend interfaces with HTML, CSS, and JavaScript.</li>
-    <li>Building RESTful APIs and managing databases using Node.js and MongoDB.</li>
-    <li>Working on secure system designs and backend authentication flows.</li>
-    <li>Collaborating with peers and helping others understand key software concepts.</li>
-  </ol>
-</div>
 
-     <div class="education">
-  <p>
-    I'm <strong>Eyob</strong>, a <strong>3rd-year Software Engineering student</strong> at 
-    <strong>Mekelle University, Ethiopia</strong>. <br><br>  
-    I’ve built a strong foundation in <br><em>Operating Systems</em><br> <em>DBMS</em><br>
-    <em>Software Security</em><br> <em>DSA</em><br><em>Computer Networking</em><br>and <br> <em>computer programming</em>  <br> <br>
-    My studies focus on building efficient, secure, and user-centered software solutions.
-  </p>
-</div>
+          <div class="about-content">
+                        <h1>About Me</h1>
+                        <ul id="aboutBtn">
+                            <li><button id="expBtn">Experiance</button></li>
+                            <li><button id="eduBtn">Education</button></li>
+                            <li><button id="lifeBtn">Life</button></li>
+                        </ul>
+                        <div class="experience">
+                      <p>
+                        I'm <strong>Eyob</strong>, a passionate <strong>Full-Stack Developer</strong>.  <br>
+                        Over my university journey, I’ve built several solid projects that strengthened my backend and frontend skills.  <br><br>
+                        I’m currently working on <strong>“My-Back-Test”</strong> — a Node.js-based backend project designed to test and enhance my backend development abilities.
+                      </p><br><br>
+                      <p>Some highlights of my experience include:</p><br>
+                      <ol>
+                        <li>Developing responsive frontend interfaces with HTML, CSS, and JavaScript.</li>
+                        <li>Building RESTful APIs and managing databases using Node.js and MongoDB.</li>
+                        <li>Working on secure system designs and backend authentication flows.</li>
+                        <li>Collaborating with peers and helping others understand key software concepts.</li>
+                      </ol>
+                    </div>
 
-     <div class="life">
-  <p>
-   A believer in Christ, a passionate learner, and a creative mind who enjoys both logic and art. <br>  
-    I love building software that connects users and data efficiently, turning ideas into real, useful applications. <br>
-  </p>
-  <p>
-    Outside of coding, I’m a fun and disciplined person who enjoys watching and playing football. <br>  
-    I also play the piano and sing at church — expressing my faith through music and community.
-  </p>
-</div>
+                        <div class="education">
+                      <p>
+                        I'm <strong>Eyob</strong>, a <strong>3rd-year Software Engineering student</strong> at 
+                        <strong>Mekelle University, Ethiopia</strong>. <br><br>  
+                        I’ve built a strong foundation in <br><em>Operating Systems</em><br> <em>DBMS</em><br>
+                        <em>Software Security</em><br> <em>DSA</em><br><em>Computer Networking</em><br>and <br> <em>computer programming</em>  <br> <br>
+                        My studies focus on building efficient, secure, and user-centered software solutions.
+                      </p>
+                    </div>
 
-   </div>
-   <img src="assets/images/myimg2.png" alt="">
-    <!-- Short bio, education, interests -->
+                        <div class="life">
+                      <p>
+                      A believer in Christ, a passionate learner, and a creative mind who enjoys both logic and art. <br>  
+                        I love building software that connects users and data efficiently, turning ideas into real, useful applications. <br>
+                      </p>
+                      <p>
+                        Outside of coding, I’m a fun and disciplined person who enjoys watching and playing football. <br>  
+                        I also play the piano and sing at church — expressing my faith through music and community.
+                      </p>
+                    </div>
+
+             </div>
+          <img src="assets/images/myimg2.png" alt="">
   </section>
 
-  <!-- =======================
-       4. Skills Section
-  ======================== -->
-  <section id="services">
-   <h2>My service for help your business</h2>
-   <div class="service">
-        <div class="ser">
-          <img src="assets/images/frontend.png" alt="">
-          <h3>Frontend Devloper</h3>
-          <h4>Pro</h4>
-        </div>
-        <div class="ser">
-          <img src="assets/images/backend.png" alt="">
-          <h3>Backend Devloper</h3>
-          <h4>Junior</h4>
-        </div>
-        <div class="ser">
-          <img src="" alt="">
-          <h3>Data Analyst and Data Entery</h3>
-          <h4>Junior</h4>
-        </div>
-        </div>
-  </section>
-  <!-- =======================
-       4. Skills Section
-  ======================== -->
-  <section id="skills">
-    <!-- List your skills, tech stack icons, or progress bars -->
-     <h1>Skills</h1>
-     <div class="languges skill">
-         <p>Programming languages</p>
-         <i class="fa-brands fa-js"></i>
-         <i class="fa-brands fa-html5"></i>
-         <i class="fa-brands fa-css3"></i>
-         <i class="fa-brands fa-java"></i>
-         <i class="fa-solid fa-database"></i>
-     </div>
-     <div class="framworks skill">
-           <p>Frame Works</p>
-           <i class="fa-brands fa-react"></i>
-           <i class="fa-brands fa-vuejs"></i>
-     </div>
-     <div class="library skill">
-           <p>Library</p>
+  <!--Services Section-->
 
-     </div>
-     <div class="db skill">
-          <p>Databases</p>
-     </div>
-     <div class="tools skill">
-          <p>Dev Tools</p>
-          <i class="fa-brands fa-git"></i>
-          <i class="fa-brands fa-github"></i>
-     </div>
+              <div class="controls-wrapper">
+              
+                <button class="custom-nav-btn custom-prev" aria-label="Previous slide">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <div class="my-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-one">
+                       <h2>Frontend development</h2>
+                       <img src="/assets/images/frontend.png" alt="">
+                       <h3>Modern Website For Any Bussiness Companey and Organization </h3>
+                    </div>
+                    <div class="swiper-slide slide-one">
+                       <h2>Backend development</h2>
+                       <img src="/assets/images/backend.png" alt="">
+                       <h3>Modern Website For Any Bussiness Companey and Organization </h3>
+                    </div>
+                    <div class="swiper-slide slide-one">
+                       <h2>Software development</h2>
+                       <img src="" alt="">
+                       <h3>Software Solution Based On Your business Logic</h3>
+                    </div>
+                    <div class="swiper-slide slide-one">
+                       <h2>Maintanance</h2>
+                       <img src="/assets/images/frontend.png" alt="">
+                       <h3>Maintainance for any fault,System </h3>
+                    </div>
+                     <div class="swiper-slide slide-one">
+                       <h2>Collaborative development</h2>
+                       <img src="/assets/images/frontend.png" alt="">
+                       <h3>If you have any inovation</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <button class="custom-nav-btn custom-next" aria-label="Next slide">
+    
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+  </div>
+
+
+
+
+  <!-- Skills Section -->
+  <section id="skills-container">
+        <div id="skills">
+                <h1>Skills</h1>
+                  <div class="languges skill">
+                      <p>Programming languages</p>
+                      <i class="fa-brands fa-js" title="Javascript programming languages used for both frontend and backend"></i>
+                      <i class="fa-brands fa-html5" title="Html to structure web page texts"></i>
+                      <i class="fa-brands fa-css3" title="Css used to style web pages"></i>
+                      <i class="fa-brands fa-java" title="Java"></i>
+                      <i class="fa-solid fa-database" title="databases "></i>
+                  </div>
+                  <div class="framworks skill">
+                        <p>Frame Works</p>
+                        <i class="fa-brands fa-react" title="React Library"></i>
+                        <i class="fa-brands fa-vuejs" title="Vue LIbrary"></i>
+                  </div>
+                  <div class="library skill">
+                        <p>Library</p>
+
+                  </div>
+                  <div class="db skill">
+                        <p>Databases</p>
+
+                  </div>
+                  <div class="tools skill">
+                        <p>Dev Tools</p>
+                        <i class="fa-brands fa-git" title="git version control tools"></i>
+                        <i class="fa-brands fa-github" title="Remote Version control system built on the top of git"></i>
+                  </div>
+        </div>
   </section>
 
   <!-- =======================
@@ -234,9 +275,7 @@
      </div>
   </section>
 
-  <!-- =======================
-       8. Footer
-  ======================== -->
+  <!--Footer-->
   <footer>
     <p>© 2025 Eyob | Made with ❤️</p>
     <!-- Optional: social icons -->
@@ -245,5 +284,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/about.js"></script>
+  <script src="js/service.js"></script>
 </body>
 </html>
