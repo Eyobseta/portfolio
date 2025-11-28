@@ -1,3 +1,7 @@
+:root{
+    --primary--color:#25d366;
+    --secondary--color:#efefef;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body{
-    color: #fff;
+    color: var(--primary--color);
     width: 100%;
     height: auto;
     display: flex;
@@ -13,16 +17,17 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    background: #efefef;
+    background: var(--secondary--color);
 }
 
 /*   all content  container*/
 .container{
+    color: var(--primary--color);
     position: relative;
     width: 100%;
     height: auto;
     border:solid 0.1rem #5a5a56;
-    background-color: #013220;
+    background-color: var(--secondary--color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +35,15 @@ body{
     gap: 2rem;
 }
 
-
+.home{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 /* header style*/
 header {
     margin-top: 2rem;
@@ -57,16 +70,20 @@ header >nav> ul {
     gap: 2rem;
 }
 nav ul a{
-    color: #fff;
+    color: #111;
     text-decoration: none;
     padding: 0.15rem;
     border-radius: 0.5rem;
+    font-weight: bold;
 }
 nav ul a:hover{
-    border-bottom: 0.45rem solid  #e0e645;
-    border-top: 0.45rem solid  #e0e645;
+    border-bottom: 0.45rem solid var(--primary--color);
+    border-top: 0.45rem solid  var(--primary--color);
     cursor: pointer;
 }
+
+
+
 
 
 /* hero content or home page*/
@@ -76,37 +93,61 @@ nav ul a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: #fff solid 0.005rem;
     position: relative;
+    margin-top: 1rem;
     padding-bottom: 6rem;
-    gap: 2rem;
-
 }
-.hero-img img {
-  width: 30rem;
-  height:16rem; 
-  object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.hero-content{
+.hero-img {
+    width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    margin: 50px;
+   text-align: center;
 }
-.hero-content h1{
-    font-family: cursive,Arial, Helvetica, sans-serif;
+.hero-img img {
+  width: 16rem;
+  height:16rem; 
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: solid 0.2rem var(--primary--color);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.hero-img h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    height: 10vh;
     width: 100%;
-    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px #000;
+    position: relative;
+    font-weight: bold;
     text-align: center;
+    perspective: 50px;
+    perspective-origin: 50% 100%;
+    display: inline-block;
 }
+.hero-content{
+    padding: 3rem 1rem;
+    height: 100%;
+    margin-left: 2rem;
+    width: 60%;
+    border: solid 0.15rem #036642;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .hero-content p{
-    color: #9d9fa1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 .to-form{
     margin-top: 1rem;
@@ -116,17 +157,12 @@ nav ul a:hover{
     align-items: center;
     gap: 1rem;
 }
-.form-btn{
-    text-decoration: none;
-    color: #e0e645;
-    border: solid 0.1rem #e0e645;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-weight: 500;
-}
-.form-btn:hover{
-    color: #111;
-    background-color: #e0e645;
+.to-form h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #07be35;
+    font-size: 1.3rem;
 }
 .hero-buttons {
     display: flex;
@@ -136,17 +172,44 @@ nav ul a:hover{
     margin-top: 1rem;
 }
 .hero-buttons a{
-    text-decoration: none;
-    color: #e0e645;
-    border: solid 0.1rem #e0e645;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-weight: 500;
+  background-color: var(--secondary--color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  color: var(--primary--color);
+  border: solid 0.16rem var(--primary--color);
+  border-radius: 0.5rem; 
+  padding: 0.5rem;
+  font-weight: bold;
 }
 .hero-buttons .btn:hover{
-    color: #111;
-    background-color: #e0e645;
+    border-color: var(--secondary--color);
+    color:#111;
+    background-color: var(--primary--color);
 }
+
+.form-btn{
+    display: block;
+    text-decoration: none;
+    color:#000;
+     border: solid 0.16rem var(--primary--color);
+     background-color: var(--primary--color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.form-btn:hover{
+    border-color: var(--secondary--color);
+    color: #285AEB;
+    background-color: var(--primary--color);
+}
+
+
+
+
 
 
 
@@ -154,15 +217,18 @@ nav ul a:hover{
 
 #about {
     width: 100%;
-    height: 75vh;
+    height: 90vh;
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 0rem;
-     border-bottom: #fff solid 0.15rem;
+     gap: 3rem;
+     background-color: var(--primary--color);
 }
 
 .about-content {
+    box-shadow: 5px 3px 10px #111;
+    border: solid 0.15rem gray;
+    border-radius: 1rem;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -188,7 +254,7 @@ nav ul a:hover{
 }
 #aboutBtn li button{
     outline: none;
-    background-color: #e0e645;
+    background-color: #e6d432;
     color: #013220;
      padding: 0.3rem 0.5rem;
      border-radius: 0.5rem;
@@ -205,11 +271,14 @@ nav ul a:hover{
     background-color: #013220;
 }
 .about-content h1 {
+    color: blue;
+    font-weight: bold;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 .about-content p{
-   color: #d9e7f7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: #000;
    text-align: center;
    font-weight: 400;
    text-align: center;
@@ -225,7 +294,7 @@ nav ul a:hover{
 }
 .about-content ol li{
     font-weight: 400;
-    color: #d9e7f7;
+     color: #000;
 }
 
 
@@ -233,7 +302,6 @@ nav ul a:hover{
 
 
 /*services section */
-
 .controls-wrapper {
       display: flex;
       align-items: center;
@@ -257,10 +325,19 @@ nav ul a:hover{
       cursor: pointer;
       box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     }
-    .custom-nav-btn:active { transform: scale(.98); }
-    .custom-nav-btn[disabled] { opacity: 0.4; cursor: pointer; }
-
+    .custom-nav-btn:active { 
+        transform: scale(.98);
+     }
+    .custom-nav-btn[disabled] { 
+        opacity: 0.6;
+        cursor: pointer;
+     }
+     .custom-nav-btn:hover {
+        background-color: var(--primary--color); 
+     } 
     .my-swiper {
+        border-radius: 1rem;
+      box-shadow: 0px 0px 20px #000;
       width: 90%; 
       height: 400px;
       position: relative;
@@ -311,13 +388,16 @@ nav ul a:hover{
     align-items: center;
     border-top: #fff solid 0.15rem;
     border-bottom: #fff solid 0.15rem;
+    background-color: #036642;
 }
 #skills{
+    background-color: var(--secondary--color);
     width: 50%;
     height: 70%;
     padding: 1rem;
     border: #bdba06 solid 0.25rem;
     border-radius: 1rem;
+    color: #036642;
     text-align: center;
 }
 #skills h1{
@@ -536,5 +616,4 @@ nav ul a:hover{
 .education{
     display: none;
 }
-
 
